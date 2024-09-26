@@ -1,0 +1,57 @@
+:root{
+  --base: #58D09C;
+  --spacing: 250px;
+  --blur: 0;
+  --invert: 0;
+  --sepia: 0;
+  --saturate: 100%;
+  --hue-rotate: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  height: 100vh;
+  background-color: var(--base);
+}
+.controls{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.wrapper{
+  display: flex;
+}
+.label,
+.photo-filters{
+  margin: 0 0 20px 20px;
+  line-height: 50px;
+}
+.label{
+  font-size: 30px;
+}
+.photo-filters{
+  font-size: 50px;
+  margin-top: 20px;
+  color: var(--base,#58D09C);
+  filter: hue-rotate(180deg) invert(100%) contrast(220%);
+}
+.img{
+  position: fixed;
+  top: 0;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+.image{
+  width: var(--spacing);
+  filter: blur(var(--blur)) invert(var(--invert)) sepia(var(--sepia)) saturate(var(--saturate)) 
+  hue-rotate(var(--hue-rotate))
+}

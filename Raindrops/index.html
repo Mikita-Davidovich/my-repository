@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Raindrops</title>
+</head>
+<body>
+  <div class="first-page">
+    <button class="start-button play">Play game!</button>
+    <button class="start-button how-to-play">How to play?</button>
+  </div>
+  <div class="your-total-score">
+    <span class="you-loose">Game Over</span>
+    <div class="play-again-or-exit">
+      <button class="final-buttons play-again">Play again!</button>
+      <button class="final-buttons exit">Exit</button>
+    </div>
+  </div>
+  <div class="re">
+    <video class="how-to-play-video">
+      <source src="video/howToPlay.mp4">
+    </video>
+  </div>
+  <audio class="song-win">
+    <source src="sounds/true.mp3">
+  </audio>
+  <audio class="song-fail">
+    <source src="sounds/error.mp3">
+  </audio>
+  <audio class="song-end-game">
+    <source src="sounds/endGame.mp3">
+  </audio>
+  <div class="main-wrapper">
+    <div class="wrapper">
+      <div class="main-rain-drop"></div>
+      <div class="main-window">
+        <div class="waves">
+          <div class="wave first-wave"></div>
+          <div class="wave second-wave"></div>
+        </div>
+      </div>
+    </div>
+  <div class="right-window">
+    <div class="total-score"><i class="fas fa-star"></i> Score: <span class="score">0</span></div>
+    <div class="calculator">
+      <input class="screen" disabled value="">
+      <div class="buttons">
+        <input type="button" class="button button-number" value="7"></input>
+        <input type="button" class="button button-number" value="8"></input>
+        <input type="button" class="button button-number" value="9"></input>
+        <input type="button" class="button clear" value="Clear"></input>
+        <input type="button" class="button button-number" value="4"></input>
+        <input type="button" class="button button-number" value="5"></input>
+        <input type="button" class="button button-number" value="6"></input>
+        <input type="button" class="button button-number" value="1"></input>
+        <input type="button" class="button button-number" value="2"></input>
+        <input type="button" class="button button-number" value="3"></input>
+        <input type="button" class="button zero button-number" value="0"></input>
+        <input type="button" class="button enter" value="Enter"></input>
+        <input type="button" class="button delete" value="Delete"></input>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

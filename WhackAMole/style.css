@@ -1,0 +1,91 @@
+html{
+  box-sizing: border-box;
+  background: #3cf096;
+  font-family: 'Amatic SC', cursive;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.name{
+  text-align: center;
+  font-size: 80px;
+  margin: 0 0 10px 0;
+  user-select: none;
+}
+.score{
+  text-align: center;
+  font-size: 30px;
+  width: 300px;
+  background:#f0c733;
+  border-radius: 40px;
+  box-shadow: 0 0 20px 10px #ff0000;
+}
+.game{
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.hole{
+  flex-basis: 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+.hole:after{
+  background: url('hole/hole.svg') center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+.mole{
+  background: url('mole/mole.svg') bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: .4s;
+  cursor: pointer;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0  10px 0;
+
+}
+.play{
+  color: #1c139e;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  background-color: #f0c733;
+  user-select: none;
+  font-size: 20px;
+  font-family: 'Amatic SC', cursive; 
+  transition: .7s;
+}
+.play:hover{
+  transform: scale(1.1);
+}
+.hole.active .mole{
+  transform: translateY(0);
+}
+.main-time{
+  font-size: 30px;
+  text-align: center;
+  color: #ff0000;
+  margin-left: 50px;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

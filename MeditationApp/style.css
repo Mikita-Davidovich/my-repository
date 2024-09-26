@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.time-select, 
+.sound-picker,
+.player-conteiner{
+  height: 80%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.player-conteiner{
+  position: relative;
+}
+.track-outline,
+.moving-outline{
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+.time-display{
+  position: absolute;
+  bottom: 10%;
+  color: #ffffff;
+  font-size: 50px;
+}
+.default-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220vh;
+  z-index: -1;
+}
+.time-buttons-and-weather{
+  background: none;
+  color: #ffffff;
+  width: 50%;
+  height: 10%;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 25px;
+  transition: all .5s;
+}
+.time-buttons-and-weather:focus{
+  outline: none;
+}
+.time-buttons:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+.buttons-weather{
+  border: none;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.buttons-weather:nth-child(1){
+  background-color: #4972a1;
+}
+.buttons-weather:nth-child(2){
+  background-color: #a14f49;
+}
+.image-weather{
+  width: 100%;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Variables and JS </title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="controls">
+      <h2 class="photo-filters">Фотофильтры</h2>
+      <label class="label">Цвет фона:
+        <input class="input" type="color" name="base" value="#58D09C">
+      </label>
+      <label class="label">Размер фото:
+          <input class="input" type="range" name="spacing" min="50" max="500" value="250" data-sizing="px">
+      </label>
+      <label class="label">Размытие:
+        <input class="input" type="range" name="blur" min="0" max="5" value="0" data-sizing="px">
+      </label>
+      <label class="label">Инверсия:
+        <input class="input" type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+      </label>
+      <label class="label">Сепия:
+        <input class="input" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+      </label>
+      <label class="label">Насыщенность:
+        <input class="input" type="range" name="saturate" min="0" max="200" value="100" data-sizing="%">
+      </label>
+      <label class="label">Оттенок:
+        <input class="input" type="range"  name="hue-rotate" min="0" max="360" value="0" data-sizing="deg">
+      </label>
+    </div>  
+    <div class="img">
+      <img class="image" src="image/eagle.jpg">
+    </div>
+  </div>  
+  <script src="main.js"></script>
+</body>
+</html>
